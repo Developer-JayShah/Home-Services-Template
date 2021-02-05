@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 108px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+}
+
+.logo {
+    width: 40%;
+    padding-left: 60px;
+    padding-top: 5px;
+}
+
+.logo:hover {
+    color: #FF8355;
+}
+
+.Menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.Menu a:hover {
+    color: #ff5555;
+}
+.Menu .se:hover {
+    color: #FF8355;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    position: relative;
+}
+
+.Menu span {
+    margin-left: 10px;
+}
+
+.Menu a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.4s linear;
+}
+
+.Menu a:hover::before {
+    width: 100%;
+    background-color: #FF8355;
+}
+.slider
+{
+    width: 100%;
+    height: 750px;
+}
+.maindiv{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+    transform: translate(-50% -50%);
+    background: url('../images/banner6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 15s infinite linear;
+}
+/* @keyframes slider{
+    0%{
+        background: url('../images/Banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url('../images/banner6.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url('../images/banner9.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+} */
+.maindiv h1{
+    font-size: 80px;
+    color: black;
+    /* color: rgba(0, 0, 0, 0.801); */
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+}
+.maindiv span{
+    color: yellowgreen;
+}
+.what{
+    width: 100%;
+    height: 80vh;
+}
+
+.text
+{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #FE8555;
+    padding-top: 6%;
+    text-align: center;
+    
+}
+
+hr{
+    width: 100px;
+    margin-left: 47%;
+    background-color: #FFC107;
+}
+.video{
+    padding-top: 50px;
+    padding-left: 150px;
+    float: left;
+    padding-right: 50px;
+
+}
+.para
+{
+    padding-top: 80px;
+    text-align: justify;
+    padding-right: 80px;
+    color: rgba(128, 128, 128, 0.979);
+}
+.why{
+    width: 100%;
+    height: 100vh;
+}
+.text2 h3{
+    padding-top: 100px;
+    font-weight: 600;
+    font-size: 25px;
+    color: #2F3A5F;
+}
+.gif{
+    float: left;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 100px;
+}
+.progress {
+    list-style: none;
+    width: 500px;
+    margin: 60px auto;
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+
+.progress li {
+    margin: 20px 0;
+}
+
+.progress h3 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2F3A5F;
+}
+
+.bar {
+    background: rgba(128, 128, 128, 0.171);
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+
+.bar span {
+    height: 10px;
+    float: left;
+}
+
+.html {
+    background: #FFD034;
+    width: 90%;
+    animation: html .8s;
+}
+
+.css {
+    background: #586BCE;
+    width: 80%;
+    animation: css 8s;
+}
+
+.java {
+    background: #3CD0B9;
+    width: 75%;
+    animation: java 8s;
+}
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+.counter {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numeric {
+    text-align: center;
+    font-size: 25px;
+    margin: 70px;
+}
+.query
+{
+    float: left;
+    margin-left: 350px;
+}
+.start {
+    width: 100%;
+    height: 500px;
+    background-image: radial-gradient(#2f3a5f46 2px, transparent 2px);
+    background-size: 50px 50px;
+    text-align: center;
+    padding-top: 12%;
+
+}
+
+.start h2 {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.btn1 {
+    padding: 10px 15px 10px 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #FF8355;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.658);
+}
+.btn2{
+    padding: 10px 15px 10px 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #FF8355;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.658);
+    
+}
+
+.contact2{
+    width: 100%;
+    height: 400px;
+    /* clear: both; */
+}
+.contact_row2{
+    width: 100%;
+}
+.contact_col2
+{
+    width: 25%;
+    height: 250px;
+    float: left;
+    margin: 4%;
+}
+.contact_col2 h3{
+    line-height: 5;
+}
+.contact_col2 h2{
+    font-size: 20px;
+    padding-left: 3%;
+    border-left: 4px solid coral;
+}
+.contact_col2 li{
+    margin-top: 5px;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    line-height: 3;
+}
+.contact_col2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.contact_col2 span{
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+.contact_col2 .sp1:hover{
+    color: #FF8355;
+}
+.contact_col2 .ic:hover{
+    color: #FF8355;
+}
+.contact_col2 .sp{
+    font-weight: 100;
+    font-size: 20px;
+}
+footer {
+    background-color: black;
+    color: #FFF8F1;
+    padding: 25px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: -8px;
+}
+.about{
+    width: 100%;
+    height: 1500px;
+}
+.about h1{
+    padding-top: 150px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.box{
+    margin-top: 25px;
+    border: 1px solid rgba(128, 128, 128, 0.13);
+}
+.box p{
+    padding: 35px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.investor img{
+    width: 280px;
+    height: 200px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.mission {
+
+    text-align: center;
+}
+.mission h2{
+         font-weight: 100;
+         font-size: 25px;
+         padding-top: 15px;
+}
+.mission p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+} 
+.mission .btn3{
+    padding: 10px 15px 10px 15px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #FF8355;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    margin-bottom: 35px;
+}
+.contact_info{
+    width: 100%;
+    height: 170vh;
+}
+.contact_info h1{
+    padding-top: 150px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+}
+.contact_info h3{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+.contact_row{
+      width: 100%;
+}
+.contact_col{
+    background-color: rgba(0, 0, 0, 0.041);
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding-top: 45px;
+    float: left;
+    margin-left: 35px;
+    margin-top: 35px;
+}
+.contact_col:hover{
+    box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.301);
+    border-radius: 5px;
+}
+.boxs{
+    margin-top: 15px;
+}
+.contact_col h2{
+     font-weight: 600;
+     font-size: 25px;
+     color: #FE8555;
+}
+.contact_col p{
+    padding: 25px;
+}
+.service_banner{
+    width: 100%;
+    height: 650px;
+    background: url('../images/service.jpeg'),no-repeat;
+    background-position: 0px 100px;
+    background-size: cover;
+}
+.opacity{
+    width: inherit;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.329);
+    padding-top: 18%;
+    
+}
+.opacity h2{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+.dropdown{
+    margin-left: 20%;
+    float: left;
+    margin-right: 25px;
+ }
+ .dropdown-content {
+     display: none;
+     width: 200px;
+     background-color: transparent;
+     min-width: 160px;
+     z-index: 1;
+ }
+ 
+ .dropdown-content a {
+     color: white;
+     padding: 15px 20px;
+     font-size: 20px;
+     text-decoration: none;
+     display: block;
+     border: 1px solid white;
+     
+ }
+ 
+ .dropdown-content a:hover {
+     background-color: rgba(0, 0, 0, 0.171);
+ }
+ 
+ .show {
+     display: block;
+ }
+ 
+ #btn4 {
+     padding: 15px 20px;
+     font-size: 25px;
+     outline: none;
+     border: none;
+     background-color: transparent;
+     border: 1px solid white;
+     color: white;
+ }
+ .icon{  
+ transform: rotate(180deg);
+ }
+
+.search{
+    border: 1px solid white;
+    width: 500px;
+    height: 60px;
+    float: left;
+}
+.se_icon{
+    float: left;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+.se_input{
+    padding: 15px;
+}
+.se_input input{
+    width: 430px;
+    background-color: transparent;
+    height: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.se_input ::placeholder{
+    color: white;
+}
+.services {
+    width: 100%;
+    height: 800px;
+    background-color: #F7F7FC;
+    text-align: center;
+}
+
+.services h2 {
+    padding-top: 65px;
+    color: #FF8355;
+    text-transform: uppercase;
+}
+
+.services h3 {
+    padding-top: 15px;
+    color: #2F3A5F;
+    font-size: 25px;
+}
+.service_col{
+       width: 20%;
+       height: 250px;
+       float: left;
+       cursor: pointer;
+       margin: 25px;
+}
+.service_col:hover {
+    box-shadow: 0px 0px 15px 0px rgba(128, 128, 128, 0.301);
+    border-radius: 5%;
+}
+.service_row{
+    width: 100%;
+}
+.service_col img{
+            width: 150px;
+            margin-top: 25px;          
+}
+.service_col h4 {
+    color: #2F3A5F;
+    padding-top: 15px;
+}
